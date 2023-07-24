@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: rgb(153, 145, 218);
+    background: linear-gradient(90deg, rgba(153, 145, 218, 1) 10%, rgba(141, 131, 230, 1) 59%, rgba(219, 249, 255, 1) 100%);
+    overflow-x: none;
+}
+
+.navContainer {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(168, 107, 224);
+}
+
+#navlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 50px;
+    list-style: none;
+    color: white;
+}
+
+#navlogo {
+    font-family: 'roboto';
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
+#navlink a {
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+#navlink a:hover,
+#navlogo:hover {
+    color: rgb(208, 172, 241);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+}
+
+.footerBox {
+    background: rgb(168, 107, 224);
+    font-family: 'roboto';
+
+    text-align: center;
+    height: 25px;
+}
+
+.footerBox p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.contentBox {
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.rightBox img {
+    height: 400px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover {
+    transform: scale(1.1);
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2rem;
+}
+
+.ingBox {
+    font-size: 1.3rem;
+}
+
+.recipeBox {
+    font-size: 1.1rem;
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.713);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+.rightBox .overlay span {
+    color: white;
+    font-size: 1.2rem;
+}
